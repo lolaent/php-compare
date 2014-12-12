@@ -1,0 +1,19 @@
+{
+    "name": "cti/php-compare",
+    "description": "Provides an interface for comparing objects, and a helper to handle comparisons to null values",
+    "keywords": ["compare", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name"  : "Georgiana Gligor",
+            "email" : "gb@tekkie.ro"
+        },
+        {
+            "name"  : "Alex Cos",
+            "email" : "alexandru.cos@cloudtroopers.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "CTI\\PhpCompare\\": "" }
+    }
+}
