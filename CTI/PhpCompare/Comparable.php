@@ -14,5 +14,5 @@ interface Comparable
      *
      * @return bool
      */
-    public function equals($compareTo = null);
+    public function equals($compareTo);
 }
