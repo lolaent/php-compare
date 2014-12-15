@@ -35,4 +35,28 @@ class ComparisonHelper
 
         return true;
     }
+
+    /**
+     * Removes duplicates in a list based on Comparable->equals()
+     *
+     * @param Comparable[] $list
+     *
+     * @return Comparable[]
+     */
+    public function removeDuplicates($list)
+    {
+        for ($i = 0; $i < count($list) - 1; $i++) {
+            for ($j = $i + 1; $j < count($list); $j++) {
+                $item1 = $list[$i];
+                $item2 = $list[$j];
+                if ($this->areEquals($item1, $item2)) {
+                    unset ($list[$j]);
+                    $list = array_values($list);
+                    $j--;
+                }
+            }
+        }
+
+        return $list;
+    }
 }
